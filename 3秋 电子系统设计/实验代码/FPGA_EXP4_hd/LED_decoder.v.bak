@@ -1,0 +1,11 @@
+`timescale 10ns/1ns
+
+module LED_decoder(
+    input [3:0] position, 
+	 output reg[6:0] LED_data
+);
+	reg[3:0] position;
+
+
+
+endmodule

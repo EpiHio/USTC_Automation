@@ -1,0 +1,67 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\FPGA_EXP\FPGA_EXP5_IP\simulation\modelsim
+vFPGA_EXP5_IP
+I<@4G:Gek2<Dle=Sh[@8:C3
+VH47Dc@VQ[K@FgZKFhWkV21
+Z1 dD:\FPGA_EXP\FPGA_EXP5_IP\simulation\modelsim
+w1762773021
+8D:/FPGA_EXP/FPGA_EXP5_IP/FPGA_EXP5_IP.v
+FD:/FPGA_EXP/FPGA_EXP5_IP/FPGA_EXP5_IP.v
+L0 3
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP5_IP -O0
+n@f@p@g@a_@e@x@p5_@i@p
+!i10b 1
+!s100 Mk8K>>7gb<XO7^XD8=BdL1
+!s85 0
+!s108 1763275727.159000
+!s107 D:/FPGA_EXP/FPGA_EXP5_IP/FPGA_EXP5_IP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_EXP/FPGA_EXP5_IP|D:/FPGA_EXP/FPGA_EXP5_IP/FPGA_EXP5_IP.v|
+!s101 -O0
+vFPGA_EXP5_IP_tb
+!i10b 1
+!s100 2Xo>2L7MGH5W6`<IQLdQf3
+I8Z=fZbFb[?0OXSBMAlk`a2
+Vi4;17mCLQ_[iHONEn944T0
+R1
+w1762773739
+8D:/FPGA_EXP/FPGA_EXP5_IP/FPGA_EXP5_IP_tb.v
+FD:/FPGA_EXP/FPGA_EXP5_IP/FPGA_EXP5_IP_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1763275727.265000
+!s107 D:/FPGA_EXP/FPGA_EXP5_IP/FPGA_EXP5_IP_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_EXP/FPGA_EXP5_IP|D:/FPGA_EXP/FPGA_EXP5_IP/FPGA_EXP5_IP_tb.v|
+!s101 -O0
+R3
+R4
+n@f@p@g@a_@e@x@p5_@i@p_tb
+vmystorage
+ISB^9jUdbVYe?zD9[XLQOO1
+VcgQBSRcGoIWINLWb7Sf8O2
+R1
+w1762772425
+8D:/FPGA_EXP/FPGA_EXP5_IP/mystorage.v
+FD:/FPGA_EXP/FPGA_EXP5_IP/mystorage.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 9lGH:Sz88AoXcMMgF286f0
+!s85 0
+!s108 1763275727.048000
+!s107 D:/FPGA_EXP/FPGA_EXP5_IP/mystorage.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_EXP/FPGA_EXP5_IP|D:/FPGA_EXP/FPGA_EXP5_IP/mystorage.v|
+!s101 -O0

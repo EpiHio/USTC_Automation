@@ -1,0 +1,14 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP3_hd {D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_hd.v}
+vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP3_hd {D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_div.v}
+vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP3_hd {D:/FPGA_EXP/FPGA_EXP3_hd/seq_generate1.v}
+vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP3_hd {D:/FPGA_EXP/FPGA_EXP3_hd/seq_generate2.v}
+vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP3_hd {D:/FPGA_EXP/FPGA_EXP3_hd/seq_choose.v}
+vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP3_hd {D:/FPGA_EXP/FPGA_EXP3_hd/seq_detector.v}
+

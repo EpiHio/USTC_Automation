@@ -1,0 +1,57 @@
+# Reading D:/altera/13.1/modelsim_ae/tcl/vsim/pref.tcl 
+# A bookmark named "bookmark0" has been added for window "Wave"
+# A bookmark named "bookmark1" has been added for window "Wave"
+# A bookmark named "bookmark2" has been added for window "Wave"
+# A bookmarks file was found in the current directory with 4 bookmarks
+# do FPGA_EXP1_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP1 {D:/FPGA_EXP/FPGA_EXP1/FPGA_EXP1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FPGA_EXP1
+# 
+# Top level modules:
+# 	FPGA_EXP1
+# 
+# vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP1 {D:/FPGA_EXP/FPGA_EXP1/FPGA_EXP1_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FPGA_EXP1_tb
+# 
+# Top level modules:
+# 	FPGA_EXP1_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  FPGA_EXP1_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps FPGA_EXP1_tb 
+# //  ModelSim ALTERA 10.1d Nov  2 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.FPGA_EXP1_tb
+# Loading work.FPGA_EXP1
+# Bookmark "bookmark0" already exists with that definition in window "Wave", ignoring
+# Bookmark "bookmark1" already exists with that definition in window "Wave", ignoring
+# Bookmark "bookmark2" already exists with that definition in window "Wave", ignoring
+# A bookmarks file was found in the current directory with 4 bookmarks
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns
+# No bookmark changes exist in window "Wave"
+run
+# Printing not supported.

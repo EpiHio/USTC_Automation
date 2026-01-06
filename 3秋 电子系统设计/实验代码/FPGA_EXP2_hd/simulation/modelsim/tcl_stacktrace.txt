@@ -1,0 +1,90 @@
+Fri Oct 17 16:16:30 ?????? 2025
+Trace back: bad window path name ".wf_cprops"
+    while executing
+"wm withdraw $grab"
+    (procedure "::tk::RestoreFocusGrab" line 13)
+    invoked from within
+"::tk::RestoreFocusGrab $dlg $focus withdraw"
+    ("act*" arm line 170)
+    invoked from within
+"switch -glob -- $cmd {
+      {} {
+         return -code error "wrong \# args: should be \"$dlg option ?arg ...?\""
+      }
+      addhelps {
+         #..."
+    (procedure "MtiDialog::privEval" line 6)
+    invoked from within
+"MtiDialog::privEval .wf_cprops activate -over .main_pane.wave.interior.cs.body.pw.wf"
+    ("eval" body line 1)
+    invoked from within
+"eval MtiDialog::privEval .wf_cprops $args"
+    (procedure ".wf_cprops" line 1)
+    invoked from within
+"$dlg activate -over $winname"
+    (procedure "Wave::cursorPropsDialog" line 52)
+    invoked from within
+"Wave::cursorPropsDialog .main_pane.wave.interior.cs.body.pw.wf 1"
+    (button invoke)
+  <2: ::tkerror {bad window path name ".wf_cprops"}
+  <1: ::bgerror {bad window path name ".wf_cprops"}
+Fri Oct 17 16:17:06 ?????? 2025
+Trace back: bad window path name ".wf_cprops"
+    while executing
+"wm withdraw $grab"
+    (procedure "::tk::RestoreFocusGrab" line 13)
+    invoked from within
+"::tk::RestoreFocusGrab $dlg $focus withdraw"
+    ("act*" arm line 170)
+    invoked from within
+"switch -glob -- $cmd {
+      {} {
+         return -code error "wrong \# args: should be \"$dlg option ?arg ...?\""
+      }
+      addhelps {
+         #..."
+    (procedure "MtiDialog::privEval" line 6)
+    invoked from within
+"MtiDialog::privEval .wf_cprops activate -over .main_pane.wave.interior.cs.body.pw.wf"
+    ("eval" body line 1)
+    invoked from within
+"eval MtiDialog::privEval .wf_cprops $args"
+    (procedure ".wf_cprops" line 1)
+    invoked from within
+"$dlg activate -over $winname"
+    (procedure "Wave::cursorPropsDialog" line 52)
+    invoked from within
+"Wave::cursorPropsDialog .main_pane.wave.interior.cs.body.pw.wf 1"
+    (button invoke)
+  <2: ::tkerror {bad window path name ".wf_cprops"}
+  <1: ::bgerror {bad window path name ".wf_cprops"}
+Fri Oct 17 16:58:27 ?????? 2025
+Trace back: bad window path name ".wf_cprops"
+    while executing
+"wm withdraw $grab"
+    (procedure "::tk::RestoreFocusGrab" line 13)
+    invoked from within
+"::tk::RestoreFocusGrab $dlg $focus withdraw"
+    ("act*" arm line 170)
+    invoked from within
+"switch -glob -- $cmd {
+      {} {
+         return -code error "wrong \# args: should be \"$dlg option ?arg ...?\""
+      }
+      addhelps {
+         #..."
+    (procedure "MtiDialog::privEval" line 6)
+    invoked from within
+"MtiDialog::privEval .wf_cprops activate -over .main_pane.wave.interior.cs.body.pw.wf"
+    ("eval" body line 1)
+    invoked from within
+"eval MtiDialog::privEval .wf_cprops $args"
+    (procedure ".wf_cprops" line 1)
+    invoked from within
+"$dlg activate -over $winname"
+    (procedure "Wave::cursorPropsDialog" line 52)
+    invoked from within
+"Wave::cursorPropsDialog .main_pane.wave.interior.cs.body.pw.wf 1"
+    (button invoke)
+  <2: ::tkerror {bad window path name ".wf_cprops"}
+  <1: ::bgerror {bad window path name ".wf_cprops"}

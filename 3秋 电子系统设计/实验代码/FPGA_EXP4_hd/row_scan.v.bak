@@ -1,0 +1,9 @@
+`timescale 10ns/1ns
+
+module row_scan(
+    input clk,
+    input ena,
+    input [3:0] row_signal,//行信号
+    output [3:0] col_signal,//列信号
+    output [6:0] LED_data//数码管显示
+);

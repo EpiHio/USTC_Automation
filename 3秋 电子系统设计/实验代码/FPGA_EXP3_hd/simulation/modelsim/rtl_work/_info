@@ -1,0 +1,148 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\FPGA_EXP\FPGA_EXP3_hd\simulation\modelsim
+vFPGA_EXP3_div
+I<Dj9G;HbBn_ndKMif3oAo1
+VY@gZ:j^aW;Je;[U3BP^9P0
+Z1 dD:\FPGA_EXP\FPGA_EXP3_hd\simulation\modelsim
+w1761193579
+8D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_div.v
+FD:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_div.v
+L0 3
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP3_hd -O0
+n@f@p@g@a_@e@x@p3_div
+!i10b 1
+!s100 fPXfeGgi2j;[TnYhU`h?Z2
+!s85 0
+!s108 1762868868.237000
+!s107 D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_div.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_EXP/FPGA_EXP3_hd|D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_div.v|
+!s101 -O0
+vFPGA_EXP3_hd
+IS3eG4D:=iiN[1]I;K=[iA3
+VbH=jSjhjK?]VaUnSQi4^[3
+R1
+w1761648169
+8D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_hd.v
+FD:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_hd.v
+L0 3
+R2
+r1
+31
+R3
+n@f@p@g@a_@e@x@p3_hd
+R4
+!i10b 1
+!s100 >DWVZaZLePF^INgYOhXz52
+!s85 0
+!s108 1762868868.101000
+!s107 D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_hd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_EXP/FPGA_EXP3_hd|D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_hd.v|
+!s101 -O0
+vFPGA_EXP3_hd_tb
+!i10b 1
+!s100 :6Jh@FJAlXShQ0Ub_B@Wh3
+ImW]2gJ^Da43SmDj@nhn^B3
+Vd6AbF8glH7C@_fHn>DT?W0
+R1
+w1762868759
+8D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_hd_tb.v
+FD:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_hd_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1762868868.736000
+!s107 D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_hd_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_EXP/FPGA_EXP3_hd|D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_hd_tb.v|
+!s101 -O0
+R3
+R4
+n@f@p@g@a_@e@x@p3_hd_tb
+vseq_choose
+IzNH0UJcZ8Gh;`NVHZhElP2
+VO8cdg2PLB:_^U2VmiE2LQ0
+R1
+w1761193078
+8D:/FPGA_EXP/FPGA_EXP3_hd/seq_choose.v
+FD:/FPGA_EXP/FPGA_EXP3_hd/seq_choose.v
+L0 3
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ZiRBnjl0GDF<hBEBn6DEi1
+!s85 0
+!s108 1762868868.535000
+!s107 D:/FPGA_EXP/FPGA_EXP3_hd/seq_choose.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_EXP/FPGA_EXP3_hd|D:/FPGA_EXP/FPGA_EXP3_hd/seq_choose.v|
+!s101 -O0
+vseq_detector
+IE0;joeQHdGX?IQUW>jUn;3
+V>FC`Of=F4h[h<7:6[UZP53
+R1
+w1761648127
+8D:/FPGA_EXP/FPGA_EXP3_hd/seq_detector.v
+FD:/FPGA_EXP/FPGA_EXP3_hd/seq_detector.v
+L0 3
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 =hJV=Ang^0OWoZc`5IJ0T2
+!s85 0
+!s108 1762868868.635000
+!s107 D:/FPGA_EXP/FPGA_EXP3_hd/seq_detector.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_EXP/FPGA_EXP3_hd|D:/FPGA_EXP/FPGA_EXP3_hd/seq_detector.v|
+!s101 -O0
+vseq_generate1
+I:B]GMJR>GeeZoeh5<dzW91
+V<e40QM@N16H<FI4[9=2VG1
+R1
+w1761551154
+8D:/FPGA_EXP/FPGA_EXP3_hd/seq_generate1.v
+FD:/FPGA_EXP/FPGA_EXP3_hd/seq_generate1.v
+L0 3
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 3?_nKh`582Vb64EjV1bll0
+!s85 0
+!s108 1762868868.333000
+!s107 D:/FPGA_EXP/FPGA_EXP3_hd/seq_generate1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_EXP/FPGA_EXP3_hd|D:/FPGA_EXP/FPGA_EXP3_hd/seq_generate1.v|
+!s101 -O0
+vseq_generate2
+IC1NWSZHM3Dm5;a4CdSLn]2
+V9JTkT<NN1NU0MHc9ln6z>1
+R1
+w1761226970
+8D:/FPGA_EXP/FPGA_EXP3_hd/seq_generate2.v
+FD:/FPGA_EXP/FPGA_EXP3_hd/seq_generate2.v
+L0 3
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 7U^_IEOGD@IzWY3GE>[Gi3
+!s85 0
+!s108 1762868868.443000
+!s107 D:/FPGA_EXP/FPGA_EXP3_hd/seq_generate2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_EXP/FPGA_EXP3_hd|D:/FPGA_EXP/FPGA_EXP3_hd/seq_generate2.v|
+!s101 -O0

@@ -1,0 +1,19 @@
+Fitter Status : Successful - Fri Dec 05 14:53:10 2025
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : FPGA_EXP5_IP
+Top-level Entity Name : FPGA_EXP5_IP
+Family : Cyclone V
+Device : 5CEFA2F23C8
+Timing Models : Final
+Logic utilization (in ALMs) : 311 / 9,430 ( 3 % )
+Total registers : 589
+Total pins : 10 / 224 ( 4 % )
+Total virtual pins : 0
+Total block memory bits : 45,056 / 1,802,240 ( 3 % )
+Total DSP Blocks : 0 / 25 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI TX Channels : 0
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

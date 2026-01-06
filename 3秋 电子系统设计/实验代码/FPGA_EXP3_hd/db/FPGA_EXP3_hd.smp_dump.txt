@@ -1,0 +1,13 @@
+
+State Machine - |FPGA_EXP3_hd|seq_detector:detect|st
+Name st.s9 st.s8 st.s7 st.s6 st.s5 st.s4 st.s3 st.s2 st.s1 st.s0 
+st.s0 0 0 0 0 0 0 0 0 0 0 
+st.s1 0 0 0 0 0 0 0 0 1 1 
+st.s2 0 0 0 0 0 0 0 1 0 1 
+st.s3 0 0 0 0 0 0 1 0 0 1 
+st.s4 0 0 0 0 0 1 0 0 0 1 
+st.s5 0 0 0 0 1 0 0 0 0 1 
+st.s6 0 0 0 1 0 0 0 0 0 1 
+st.s7 0 0 1 0 0 0 0 0 0 1 
+st.s8 0 1 0 0 0 0 0 0 0 1 
+st.s9 1 0 0 0 0 0 0 0 0 1 

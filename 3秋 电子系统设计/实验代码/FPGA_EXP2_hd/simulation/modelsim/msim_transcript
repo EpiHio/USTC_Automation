@@ -1,0 +1,68 @@
+# Reading C:/altera/13.1/modelsim_ae/tcl/vsim/pref.tcl 
+# A bookmarks file was found in the current directory with 4 bookmarks
+# do FPGA_EXP2_hd_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP2_hd {D:/FPGA_EXP/FPGA_EXP2_hd/FPGA_EXP2_hd.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FPGA_EXP2_hd
+# -- Compiling module div50MHZ
+# -- Compiling module LED_decode
+# 
+# Top level modules:
+# 	FPGA_EXP2_hd
+# 
+# vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP2_hd {D:/FPGA_EXP/FPGA_EXP2_hd/FPGA_EXP2_hd_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FPGA_EXP2_hd_tb
+# 
+# Top level modules:
+# 	FPGA_EXP2_hd_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  FPGA_EXP2_hd_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps FPGA_EXP2_hd_tb 
+# //  ModelSim ALTERA 10.1d Nov  2 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.FPGA_EXP2_hd_tb
+# Loading work.FPGA_EXP2_hd
+# Loading work.div50MHZ
+# Loading work.LED_decode
+# ** Warning: (vsim-3017) D:/FPGA_EXP/FPGA_EXP2_hd/FPGA_EXP2_hd_tb.v(67): [TFMPC] - Too few port connections. Expected 9, found 8.
+# 
+#         Region: /FPGA_EXP2_hd_tb/fpga
+# ** Warning: (vsim-3722) D:/FPGA_EXP/FPGA_EXP2_hd/FPGA_EXP2_hd_tb.v(67): [TFMPC] - Missing connection for port 'DP'.
+# 
+# A bookmarks file was found in the current directory with 4 bookmarks
+# Bookmark(s) were restored for window "Structure"
+# 
+# add wave *
+# Bookmark(s) were restored for window "Wave"
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns
+step -over -current
+# Bookmark(s) were restored for window "Source"
+# Bookmark(s) were restored for window "Source1"
+# A bookmark named "bookmark4" has been added for window "Wave"
+# Break key hit 
+# Bookmarks have been exported for window "Wave" to: D:/FPGA_EXP/FPGA_EXP2_hd/simulation/modelsim/bookmarks.do
+# All bookmarks have been removed for window "Wave"
+# All bookmarks have been removed for window "Wave"
+# Changing window so values will track the active time

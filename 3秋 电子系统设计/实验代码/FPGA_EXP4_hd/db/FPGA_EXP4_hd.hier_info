@@ -1,0 +1,106 @@
+|FPGA_EXP4_hd
+clk => clk.IN1
+row_signal[0] => row_signal[0].IN1
+row_signal[1] => row_signal[1].IN1
+row_signal[2] => row_signal[2].IN1
+row_signal[3] => row_signal[3].IN1
+col_signal[0] << col_signal[0].DB_MAX_OUTPUT_PORT_TYPE
+col_signal[1] << col_signal[1].DB_MAX_OUTPUT_PORT_TYPE
+col_signal[2] << col_signal[2].DB_MAX_OUTPUT_PORT_TYPE
+col_signal[3] << col_signal[3].DB_MAX_OUTPUT_PORT_TYPE
+LED_data[0] << row_scan:row_scan.LED_data
+LED_data[1] << row_scan:row_scan.LED_data
+LED_data[2] << row_scan:row_scan.LED_data
+LED_data[3] << row_scan:row_scan.LED_data
+LED_data[4] << row_scan:row_scan.LED_data
+LED_data[5] << row_scan:row_scan.LED_data
+LED_data[6] << row_scan:row_scan.LED_data
+LED_choose << row_scan:row_scan.LED_choose
+
+
+|FPGA_EXP4_hd|FPGA_EXP4_div:div
+clk => clkout~reg0.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clkout <= clkout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FPGA_EXP4_hd|col_generate:col_generate
+clk => col_signal[0]~reg0.CLK
+clk => col_signal[1]~reg0.CLK
+clk => col_signal[2]~reg0.CLK
+clk => col_signal[3]~reg0.CLK
+clk => num[0].CLK
+clk => num[1].CLK
+col_signal[0] <= col_signal[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_signal[1] <= col_signal[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_signal[2] <= col_signal[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_signal[3] <= col_signal[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FPGA_EXP4_hd|row_scan:row_scan
+clk => position[0].CLK
+clk => position[1].CLK
+clk => position[2].CLK
+clk => position[3].CLK
+col_signal[0] => Mux0.IN18
+col_signal[0] => Mux1.IN18
+col_signal[1] => Mux0.IN17
+col_signal[1] => Mux1.IN17
+col_signal[2] => Mux0.IN16
+col_signal[2] => Mux1.IN16
+col_signal[3] => Mux0.IN15
+col_signal[3] => Mux1.IN15
+row_signal[0] => Mux2.IN18
+row_signal[0] => Mux3.IN18
+row_signal[0] => Mux4.IN18
+row_signal[0] => Mux5.IN18
+row_signal[1] => Mux2.IN17
+row_signal[1] => Mux3.IN17
+row_signal[1] => Mux4.IN17
+row_signal[1] => Mux5.IN17
+row_signal[2] => Mux2.IN16
+row_signal[2] => Mux3.IN16
+row_signal[2] => Mux4.IN16
+row_signal[2] => Mux5.IN16
+row_signal[3] => Mux2.IN15
+row_signal[3] => Mux3.IN15
+row_signal[3] => Mux4.IN15
+row_signal[3] => Mux5.IN15
+LED_data[0] <= LED_decoder:LED_decoder.out
+LED_data[1] <= LED_decoder:LED_decoder.out
+LED_data[2] <= LED_decoder:LED_decoder.out
+LED_data[3] <= LED_decoder:LED_decoder.out
+LED_data[4] <= LED_decoder:LED_decoder.out
+LED_data[5] <= LED_decoder:LED_decoder.out
+LED_data[6] <= LED_decoder:LED_decoder.out
+LED_choose <= <VCC>
+
+
+|FPGA_EXP4_hd|row_scan:row_scan|LED_decoder:LED_decoder
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

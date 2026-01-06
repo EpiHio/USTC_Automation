@@ -1,0 +1,5 @@
+`timescale 10ns/1ns
+module FPGA_EXP4_div (
+    input clk,
+    output clk_divided
+);

@@ -1,0 +1,89 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\FPGA_EXP\FPGA_EXP2_hd\simulation\modelsim
+vdiv50MHZ
+IPzf58__il@7NYnk8CRRdl2
+V7W9_0l7ONmUl?`<ZJW4662
+Z1 dD:\FPGA_EXP\FPGA_EXP2_hd\simulation\modelsim
+Z2 w1761055409
+Z3 8D:/FPGA_EXP/FPGA_EXP2_hd/FPGA_EXP2_hd.v
+Z4 FD:/FPGA_EXP/FPGA_EXP2_hd/FPGA_EXP2_hd.v
+L0 102
+Z5 OV;L;10.1d;51
+r1
+31
+Z6 !s108 1761137429.129000
+Z7 !s107 D:/FPGA_EXP/FPGA_EXP2_hd/FPGA_EXP2_hd.v|
+Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_EXP/FPGA_EXP2_hd|D:/FPGA_EXP/FPGA_EXP2_hd/FPGA_EXP2_hd.v|
+Z9 o-vlog01compat -work work -O0
+Z10 !s92 -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP2_hd -O0
+ndiv50@m@h@z
+!i10b 1
+!s100 EK`0]YzDg5KLJh_^@62OT1
+!s85 0
+!s101 -O0
+vFPGA_EXP2_hd
+I5M7UbJ:eF=4^UOZJ71AMI2
+V;0446Y31`^RlL2J=ca2<h2
+R1
+R2
+R3
+R4
+L0 2
+R5
+r1
+31
+R6
+R7
+R8
+R9
+R10
+n@f@p@g@a_@e@x@p2_hd
+!i10b 1
+!s100 9PDL?1Afe<6_YCzCNGQ>C1
+!s85 0
+!s101 -O0
+vFPGA_EXP2_hd_tb
+!i10b 1
+!s100 QB?5Z<N?l0klb4iheN=1@3
+IR;TV1Lk4Fa;6n??f7EYcc0
+VmIU65WF1OMo3n=R]35M<40
+R1
+w1761035875
+8D:/FPGA_EXP/FPGA_EXP2_hd/FPGA_EXP2_hd_tb.v
+FD:/FPGA_EXP/FPGA_EXP2_hd/FPGA_EXP2_hd_tb.v
+L0 2
+R5
+r1
+!s85 0
+31
+!s108 1761137429.258000
+!s107 D:/FPGA_EXP/FPGA_EXP2_hd/FPGA_EXP2_hd_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA_EXP/FPGA_EXP2_hd|D:/FPGA_EXP/FPGA_EXP2_hd/FPGA_EXP2_hd_tb.v|
+!s101 -O0
+R9
+R10
+n@f@p@g@a_@e@x@p2_hd_tb
+vLED_decode
+IU>[ko>:AMDzHeED=9?<Fm0
+V0YnDZIi@dJ4N66]JmEG5]1
+R1
+R2
+R3
+R4
+L0 124
+R5
+r1
+31
+R6
+R7
+R8
+R9
+R10
+n@l@e@d_decode
+!i10b 1
+!s100 `3>Q7TE<:dF5:;KC[9Wfb3
+!s85 0
+!s101 -O0

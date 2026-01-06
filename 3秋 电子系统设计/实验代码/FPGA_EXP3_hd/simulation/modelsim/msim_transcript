@@ -1,0 +1,92 @@
+# Reading D:/altera/13.1/modelsim_ae/tcl/vsim/pref.tcl 
+# A bookmarks file was found in the current directory with 7 bookmarks
+# Bookmark(s) were restored for window "Wave"
+# do FPGA_EXP3_hd_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.1\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.1\modelsim_ae\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP3_hd {D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_hd.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FPGA_EXP3_hd
+# 
+# Top level modules:
+# 	FPGA_EXP3_hd
+# vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP3_hd {D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_div.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FPGA_EXP3_div
+# 
+# Top level modules:
+# 	FPGA_EXP3_div
+# vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP3_hd {D:/FPGA_EXP/FPGA_EXP3_hd/seq_generate1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seq_generate1
+# 
+# Top level modules:
+# 	seq_generate1
+# vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP3_hd {D:/FPGA_EXP/FPGA_EXP3_hd/seq_generate2.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seq_generate2
+# 
+# Top level modules:
+# 	seq_generate2
+# vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP3_hd {D:/FPGA_EXP/FPGA_EXP3_hd/seq_choose.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seq_choose
+# 
+# Top level modules:
+# 	seq_choose
+# vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP3_hd {D:/FPGA_EXP/FPGA_EXP3_hd/seq_detector.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seq_detector
+# 
+# Top level modules:
+# 	seq_detector
+# 
+# vlog -vlog01compat -work work +incdir+D:/FPGA_EXP/FPGA_EXP3_hd {D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_hd_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FPGA_EXP3_hd_tb
+# 
+# Top level modules:
+# 	FPGA_EXP3_hd_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  FPGA_EXP3_hd_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps FPGA_EXP3_hd_tb 
+# //  ModelSim ALTERA 10.1d Nov  2 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.FPGA_EXP3_hd_tb
+# Loading work.seq_generate1
+# Loading work.seq_generate2
+# Loading work.seq_choose
+# Loading work.seq_detector
+# ** Error: (vsim-3053) D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_hd_tb.v(25): Illegal output or inout port connection for "port 'seq1'".
+# 
+#         Region: /FPGA_EXP3_hd_tb/generate1
+# ** Error: (vsim-3053) D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_hd_tb.v(31): Illegal output or inout port connection for "port 'seq2'".
+# 
+#         Region: /FPGA_EXP3_hd_tb/generate2
+# ** Error: (vsim-3053) D:/FPGA_EXP/FPGA_EXP3_hd/FPGA_EXP3_hd_tb.v(38): Illegal output or inout port connection for "port 'seq_out'".
+# 
+#         Region: /FPGA_EXP3_hd_tb/choose2_1
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./FPGA_EXP3_hd_run_msim_rtl_verilog.do PAUSED at line 17
+# Loaded 5 bookmarks for window "Wave"
+# Break key hit 
+# Load canceled
+# Load canceled
+# Load canceled

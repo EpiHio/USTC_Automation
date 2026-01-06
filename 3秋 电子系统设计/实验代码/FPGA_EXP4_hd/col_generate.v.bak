@@ -1,0 +1,7 @@
+`timescale 10ns/1ns
+
+module col_generate (
+    input clk,
+    input ena,
+    output [3:0] col_signal,//列信号
+);

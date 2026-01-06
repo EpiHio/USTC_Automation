@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -3.894
+TNS   : -95.731
+
+Type  : Slow 1100mV 85C Model Setup 'FPGA_EXP3_div:div|clkout'
+Slack : -1.907
+TNS   : -31.731
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -2.160
+TNS   : -2.160
+
+Type  : Slow 1100mV 85C Model Hold 'FPGA_EXP3_div:div|clkout'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -28.891
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'FPGA_EXP3_div:div|clkout'
+Slack : -0.724
+TNS   : -26.708
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -4.229
+TNS   : -94.055
+
+Type  : Slow 1100mV 0C Model Setup 'FPGA_EXP3_div:div|clkout'
+Slack : -1.945
+TNS   : -32.453
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -1.989
+TNS   : -1.989
+
+Type  : Slow 1100mV 0C Model Hold 'FPGA_EXP3_div:div|clkout'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -28.846
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'FPGA_EXP3_div:div|clkout'
+Slack : -0.724
+TNS   : -26.688
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -1.653
+TNS   : -26.035
+
+Type  : Fast 1100mV 85C Model Setup 'FPGA_EXP3_div:div|clkout'
+Slack : -0.487
+TNS   : -5.770
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -0.912
+TNS   : -0.912
+
+Type  : Fast 1100mV 85C Model Hold 'FPGA_EXP3_div:div|clkout'
+Slack : 0.091
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.449
+TNS   : -2.877
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'FPGA_EXP3_div:div|clkout'
+Slack : 0.125
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -1.606
+TNS   : -22.955
+
+Type  : Fast 1100mV 0C Model Setup 'FPGA_EXP3_div:div|clkout'
+Slack : -0.422
+TNS   : -4.488
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -0.828
+TNS   : -0.828
+
+Type  : Fast 1100mV 0C Model Hold 'FPGA_EXP3_div:div|clkout'
+Slack : 0.069
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.454
+TNS   : -2.936
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'FPGA_EXP3_div:div|clkout'
+Slack : 0.126
+TNS   : 0.000
+
+------------------------------------------------------------

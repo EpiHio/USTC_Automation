@@ -1,0 +1,988 @@
+TimeQuest Timing Analyzer report for FPGA_EXP4_hd
+Tue Nov 04 18:25:46 2025
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1100mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1100mV 85C Model Setup Summary
+  8. Slow 1100mV 85C Model Hold Summary
+  9. Slow 1100mV 85C Model Recovery Summary
+ 10. Slow 1100mV 85C Model Removal Summary
+ 11. Slow 1100mV 85C Model Minimum Pulse Width Summary
+ 12. Setup Times
+ 13. Hold Times
+ 14. Clock to Output Times
+ 15. Minimum Clock to Output Times
+ 16. Slow 1100mV 85C Model Metastability Report
+ 17. Slow 1100mV 0C Model Fmax Summary
+ 18. Slow 1100mV 0C Model Setup Summary
+ 19. Slow 1100mV 0C Model Hold Summary
+ 20. Slow 1100mV 0C Model Recovery Summary
+ 21. Slow 1100mV 0C Model Removal Summary
+ 22. Slow 1100mV 0C Model Minimum Pulse Width Summary
+ 23. Setup Times
+ 24. Hold Times
+ 25. Clock to Output Times
+ 26. Minimum Clock to Output Times
+ 27. Slow 1100mV 0C Model Metastability Report
+ 28. Fast 1100mV 85C Model Setup Summary
+ 29. Fast 1100mV 85C Model Hold Summary
+ 30. Fast 1100mV 85C Model Recovery Summary
+ 31. Fast 1100mV 85C Model Removal Summary
+ 32. Fast 1100mV 85C Model Minimum Pulse Width Summary
+ 33. Setup Times
+ 34. Hold Times
+ 35. Clock to Output Times
+ 36. Minimum Clock to Output Times
+ 37. Fast 1100mV 85C Model Metastability Report
+ 38. Fast 1100mV 0C Model Setup Summary
+ 39. Fast 1100mV 0C Model Hold Summary
+ 40. Fast 1100mV 0C Model Recovery Summary
+ 41. Fast 1100mV 0C Model Removal Summary
+ 42. Fast 1100mV 0C Model Minimum Pulse Width Summary
+ 43. Setup Times
+ 44. Hold Times
+ 45. Clock to Output Times
+ 46. Minimum Clock to Output Times
+ 47. Fast 1100mV 0C Model Metastability Report
+ 48. Multicorner Timing Analysis Summary
+ 49. Setup Times
+ 50. Hold Times
+ 51. Clock to Output Times
+ 52. Minimum Clock to Output Times
+ 53. Board Trace Model Assignments
+ 54. Input Transition Times
+ 55. Signal Integrity Metrics (Slow 1100mv 0c Model)
+ 56. Signal Integrity Metrics (Slow 1100mv 85c Model)
+ 57. Signal Integrity Metrics (Fast 1100mv 0c Model)
+ 58. Signal Integrity Metrics (Fast 1100mv 85c Model)
+ 59. Setup Transfers
+ 60. Hold Transfers
+ 61. Report TCCS
+ 62. Report RSKM
+ 63. Unconstrained Paths
+ 64. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                        ;
++--------------------+-----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name      ; FPGA_EXP4_hd                                        ;
+; Device Family      ; Cyclone V                                           ;
+; Device Name        ; 5CEFA2F23C8                                         ;
+; Timing Models      ; Final                                               ;
+; Delay Model        ; Combined                                            ;
+; Rise/Fall Delays   ; Enabled                                             ;
++--------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 12          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ; < 0.1%      ;
+;     Processors 13-16       ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                             ;
++--------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------------+
+; Clock Name               ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                      ;
++--------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------------+
+; clk                      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                      ;
+; FPGA_EXP4_div:div|clkout ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { FPGA_EXP4_div:div|clkout } ;
++--------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------------------------+
+
+
++----------------------------------------------------------------+
+; Slow 1100mV 85C Model Fmax Summary                             ;
++------------+-----------------+--------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name               ; Note ;
++------------+-----------------+--------------------------+------+
+; 143.02 MHz ; 143.02 MHz      ; FPGA_EXP4_div:div|clkout ;      ;
+; 263.02 MHz ; 263.02 MHz      ; clk                      ;      ;
++------------+-----------------+--------------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++---------------------------------------------------+
+; Slow 1100mV 85C Model Setup Summary               ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; FPGA_EXP4_div:div|clkout ; -2.996 ; -17.440       ;
+; clk                      ; -2.802 ; -47.181       ;
++--------------------------+--------+---------------+
+
+
++---------------------------------------------------+
+; Slow 1100mV 85C Model Hold Summary                ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -1.726 ; -1.726        ;
+; FPGA_EXP4_div:div|clkout ; 0.315  ; 0.000         ;
++--------------------------+--------+---------------+
+
+
+------------------------------------------
+; Slow 1100mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1100mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1100mV 85C Model Minimum Pulse Width Summary ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -0.724 ; -18.866       ;
+; FPGA_EXP4_div:div|clkout ; -0.724 ; -17.101       ;
++--------------------------+--------+---------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Setup Times                                                                                       ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise  ; Fall  ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; row_signal[*]  ; FPGA_EXP4_div:div|clkout ; 4.745 ; 4.670 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[0] ; FPGA_EXP4_div:div|clkout ; 4.193 ; 4.300 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[1] ; FPGA_EXP4_div:div|clkout ; 4.745 ; 4.670 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[2] ; FPGA_EXP4_div:div|clkout ; 4.153 ; 4.152 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[3] ; FPGA_EXP4_div:div|clkout ; 4.449 ; 4.493 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                          ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise   ; Fall   ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; row_signal[*]  ; FPGA_EXP4_div:div|clkout ; -1.535 ; -1.570 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[0] ; FPGA_EXP4_div:div|clkout ; -1.808 ; -1.767 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[1] ; FPGA_EXP4_div:div|clkout ; -1.964 ; -1.934 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[2] ; FPGA_EXP4_div:div|clkout ; -1.535 ; -1.570 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[3] ; FPGA_EXP4_div:div|clkout ; -1.847 ; -1.843 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                               ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise   ; Fall   ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; col_signal[*]  ; FPGA_EXP4_div:div|clkout ; 6.828  ; 6.930  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[0] ; FPGA_EXP4_div:div|clkout ; 6.559  ; 6.724  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[1] ; FPGA_EXP4_div:div|clkout ; 6.503  ; 6.639  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[2] ; FPGA_EXP4_div:div|clkout ; 6.828  ; 6.930  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[3] ; FPGA_EXP4_div:div|clkout ; 6.283  ; 6.353  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+; LED_data[*]    ; FPGA_EXP4_div:div|clkout ; 14.017 ; 14.428 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[0]   ; FPGA_EXP4_div:div|clkout ; 14.017 ; 13.754 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[1]   ; FPGA_EXP4_div:div|clkout ; 12.733 ; 12.373 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[2]   ; FPGA_EXP4_div:div|clkout ; 13.733 ; 12.655 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[3]   ; FPGA_EXP4_div:div|clkout ; 12.506 ; 12.066 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[4]   ; FPGA_EXP4_div:div|clkout ; 11.553 ; 11.924 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[5]   ; FPGA_EXP4_div:div|clkout ; 13.978 ; 14.428 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[6]   ; FPGA_EXP4_div:div|clkout ; 11.842 ; 11.484 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                     ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise  ; Fall  ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; col_signal[*]  ; FPGA_EXP4_div:div|clkout ; 5.714 ; 5.758 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[0] ; FPGA_EXP4_div:div|clkout ; 5.937 ; 6.029 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[1] ; FPGA_EXP4_div:div|clkout ; 5.906 ; 5.990 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[2] ; FPGA_EXP4_div:div|clkout ; 6.206 ; 6.242 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[3] ; FPGA_EXP4_div:div|clkout ; 5.714 ; 5.758 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+; LED_data[*]    ; FPGA_EXP4_div:div|clkout ; 7.955 ; 8.102 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[0]   ; FPGA_EXP4_div:div|clkout ; 8.730 ; 8.603 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[1]   ; FPGA_EXP4_div:div|clkout ; 9.189 ; 8.825 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[2]   ; FPGA_EXP4_div:div|clkout ; 8.486 ; 8.323 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[3]   ; FPGA_EXP4_div:div|clkout ; 9.027 ; 8.555 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[4]   ; FPGA_EXP4_div:div|clkout ; 7.955 ; 8.236 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[5]   ; FPGA_EXP4_div:div|clkout ; 8.901 ; 9.382 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[6]   ; FPGA_EXP4_div:div|clkout ; 8.198 ; 8.102 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+
+
+----------------------------------------------
+; Slow 1100mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++----------------------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary                              ;
++------------+-----------------+--------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name               ; Note ;
++------------+-----------------+--------------------------+------+
+; 157.23 MHz ; 157.23 MHz      ; FPGA_EXP4_div:div|clkout ;      ;
+; 243.01 MHz ; 243.01 MHz      ; clk                      ;      ;
++------------+-----------------+--------------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++---------------------------------------------------+
+; Slow 1100mV 0C Model Setup Summary                ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -3.115 ; -47.508       ;
+; FPGA_EXP4_div:div|clkout ; -2.680 ; -17.287       ;
++--------------------------+--------+---------------+
+
+
++---------------------------------------------------+
+; Slow 1100mV 0C Model Hold Summary                 ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -1.772 ; -1.772        ;
+; FPGA_EXP4_div:div|clkout ; 0.267  ; 0.000         ;
++--------------------------+--------+---------------+
+
+
+-----------------------------------------
+; Slow 1100mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1100mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1100mV 0C Model Minimum Pulse Width Summary  ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -0.724 ; -18.797       ;
+; FPGA_EXP4_div:div|clkout ; -0.724 ; -16.870       ;
++--------------------------+--------+---------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Setup Times                                                                                       ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise  ; Fall  ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; row_signal[*]  ; FPGA_EXP4_div:div|clkout ; 4.773 ; 4.724 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[0] ; FPGA_EXP4_div:div|clkout ; 4.097 ; 4.218 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[1] ; FPGA_EXP4_div:div|clkout ; 4.773 ; 4.724 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[2] ; FPGA_EXP4_div:div|clkout ; 4.027 ; 4.093 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[3] ; FPGA_EXP4_div:div|clkout ; 4.395 ; 4.515 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                          ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise   ; Fall   ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; row_signal[*]  ; FPGA_EXP4_div:div|clkout ; -1.502 ; -1.587 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[0] ; FPGA_EXP4_div:div|clkout ; -1.796 ; -1.805 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[1] ; FPGA_EXP4_div:div|clkout ; -1.998 ; -2.004 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[2] ; FPGA_EXP4_div:div|clkout ; -1.502 ; -1.587 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[3] ; FPGA_EXP4_div:div|clkout ; -1.849 ; -1.832 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                               ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise   ; Fall   ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; col_signal[*]  ; FPGA_EXP4_div:div|clkout ; 6.475  ; 6.638  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[0] ; FPGA_EXP4_div:div|clkout ; 6.218  ; 6.427  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[1] ; FPGA_EXP4_div:div|clkout ; 6.178  ; 6.355  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[2] ; FPGA_EXP4_div:div|clkout ; 6.475  ; 6.638  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[3] ; FPGA_EXP4_div:div|clkout ; 5.972  ; 6.056  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+; LED_data[*]    ; FPGA_EXP4_div:div|clkout ; 14.110 ; 14.525 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[0]   ; FPGA_EXP4_div:div|clkout ; 14.110 ; 13.701 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[1]   ; FPGA_EXP4_div:div|clkout ; 12.773 ; 12.340 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[2]   ; FPGA_EXP4_div:div|clkout ; 13.803 ; 12.493 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[3]   ; FPGA_EXP4_div:div|clkout ; 12.597 ; 12.099 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[4]   ; FPGA_EXP4_div:div|clkout ; 11.585 ; 12.037 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[5]   ; FPGA_EXP4_div:div|clkout ; 14.028 ; 14.525 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[6]   ; FPGA_EXP4_div:div|clkout ; 11.960 ; 11.454 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                     ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise  ; Fall  ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; col_signal[*]  ; FPGA_EXP4_div:div|clkout ; 5.431 ; 5.500 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[0] ; FPGA_EXP4_div:div|clkout ; 5.620 ; 5.767 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[1] ; FPGA_EXP4_div:div|clkout ; 5.607 ; 5.742 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[2] ; FPGA_EXP4_div:div|clkout ; 5.877 ; 5.989 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[3] ; FPGA_EXP4_div:div|clkout ; 5.431 ; 5.500 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+; LED_data[*]    ; FPGA_EXP4_div:div|clkout ; 7.751 ; 8.011 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[0]   ; FPGA_EXP4_div:div|clkout ; 8.520 ; 8.286 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[1]   ; FPGA_EXP4_div:div|clkout ; 8.994 ; 8.533 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[2]   ; FPGA_EXP4_div:div|clkout ; 8.260 ; 8.036 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[3]   ; FPGA_EXP4_div:div|clkout ; 8.887 ; 8.345 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[4]   ; FPGA_EXP4_div:div|clkout ; 7.751 ; 8.077 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[5]   ; FPGA_EXP4_div:div|clkout ; 8.684 ; 9.262 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[6]   ; FPGA_EXP4_div:div|clkout ; 8.041 ; 8.011 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+
+
+---------------------------------------------
+; Slow 1100mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++---------------------------------------------------+
+; Fast 1100mV 85C Model Setup Summary               ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -1.014 ; -9.433        ;
+; FPGA_EXP4_div:div|clkout ; -0.898 ; -3.016        ;
++--------------------------+--------+---------------+
+
+
++---------------------------------------------------+
+; Fast 1100mV 85C Model Hold Summary                ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -0.779 ; -0.779        ;
+; FPGA_EXP4_div:div|clkout ; 0.041  ; 0.000         ;
++--------------------------+--------+---------------+
+
+
+------------------------------------------
+; Fast 1100mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1100mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Fast 1100mV 85C Model Minimum Pulse Width Summary ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -0.256 ; -1.749        ;
+; FPGA_EXP4_div:div|clkout ; 0.123  ; 0.000         ;
++--------------------------+--------+---------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Setup Times                                                                                       ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise  ; Fall  ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; row_signal[*]  ; FPGA_EXP4_div:div|clkout ; 1.781 ; 2.275 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[0] ; FPGA_EXP4_div:div|clkout ; 1.613 ; 2.099 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[1] ; FPGA_EXP4_div:div|clkout ; 1.781 ; 2.275 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[2] ; FPGA_EXP4_div:div|clkout ; 1.586 ; 2.091 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[3] ; FPGA_EXP4_div:div|clkout ; 1.701 ; 2.216 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                          ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise   ; Fall   ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; row_signal[*]  ; FPGA_EXP4_div:div|clkout ; -0.631 ; -1.074 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[0] ; FPGA_EXP4_div:div|clkout ; -0.723 ; -1.141 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[1] ; FPGA_EXP4_div:div|clkout ; -0.784 ; -1.218 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[2] ; FPGA_EXP4_div:div|clkout ; -0.631 ; -1.074 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[3] ; FPGA_EXP4_div:div|clkout ; -0.760 ; -1.177 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                             ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise  ; Fall  ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; col_signal[*]  ; FPGA_EXP4_div:div|clkout ; 3.230 ; 3.454 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[0] ; FPGA_EXP4_div:div|clkout ; 3.131 ; 3.394 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[1] ; FPGA_EXP4_div:div|clkout ; 3.090 ; 3.314 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[2] ; FPGA_EXP4_div:div|clkout ; 3.230 ; 3.454 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[3] ; FPGA_EXP4_div:div|clkout ; 3.001 ; 3.160 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+; LED_data[*]    ; FPGA_EXP4_div:div|clkout ; 7.154 ; 7.497 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[0]   ; FPGA_EXP4_div:div|clkout ; 7.154 ; 6.832 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[1]   ; FPGA_EXP4_div:div|clkout ; 6.788 ; 6.365 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[2]   ; FPGA_EXP4_div:div|clkout ; 7.008 ; 5.949 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[3]   ; FPGA_EXP4_div:div|clkout ; 6.788 ; 6.342 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[4]   ; FPGA_EXP4_div:div|clkout ; 6.104 ; 6.479 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[5]   ; FPGA_EXP4_div:div|clkout ; 7.060 ; 7.497 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[6]   ; FPGA_EXP4_div:div|clkout ; 6.404 ; 6.061 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                     ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise  ; Fall  ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; col_signal[*]  ; FPGA_EXP4_div:div|clkout ; 2.736 ; 2.878 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[0] ; FPGA_EXP4_div:div|clkout ; 2.838 ; 3.049 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[1] ; FPGA_EXP4_div:div|clkout ; 2.809 ; 2.996 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[2] ; FPGA_EXP4_div:div|clkout ; 2.942 ; 3.131 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[3] ; FPGA_EXP4_div:div|clkout ; 2.736 ; 2.878 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+; LED_data[*]    ; FPGA_EXP4_div:div|clkout ; 3.947 ; 3.971 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[0]   ; FPGA_EXP4_div:div|clkout ; 4.302 ; 4.067 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[1]   ; FPGA_EXP4_div:div|clkout ; 4.630 ; 4.254 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[2]   ; FPGA_EXP4_div:div|clkout ; 4.196 ; 3.971 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[3]   ; FPGA_EXP4_div:div|clkout ; 4.653 ; 4.242 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[4]   ; FPGA_EXP4_div:div|clkout ; 3.947 ; 4.260 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[5]   ; FPGA_EXP4_div:div|clkout ; 4.339 ; 4.738 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[6]   ; FPGA_EXP4_div:div|clkout ; 4.225 ; 4.082 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+
+
+----------------------------------------------
+; Fast 1100mV 85C Model Metastability Report ;
+----------------------------------------------
+No synchronizer chains to report.
+
+
++---------------------------------------------------+
+; Fast 1100mV 0C Model Setup Summary                ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -0.968 ; -8.097        ;
+; FPGA_EXP4_div:div|clkout ; -0.817 ; -2.439        ;
++--------------------------+--------+---------------+
+
+
++---------------------------------------------------+
+; Fast 1100mV 0C Model Hold Summary                 ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -0.821 ; -0.821        ;
+; FPGA_EXP4_div:div|clkout ; 0.049  ; 0.000         ;
++--------------------------+--------+---------------+
+
+
+-----------------------------------------
+; Fast 1100mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1100mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Fast 1100mV 0C Model Minimum Pulse Width Summary  ;
++--------------------------+--------+---------------+
+; Clock                    ; Slack  ; End Point TNS ;
++--------------------------+--------+---------------+
+; clk                      ; -0.264 ; -1.798        ;
+; FPGA_EXP4_div:div|clkout ; 0.129  ; 0.000         ;
++--------------------------+--------+---------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Setup Times                                                                                       ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise  ; Fall  ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; row_signal[*]  ; FPGA_EXP4_div:div|clkout ; 1.750 ; 2.240 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[0] ; FPGA_EXP4_div:div|clkout ; 1.576 ; 2.066 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[1] ; FPGA_EXP4_div:div|clkout ; 1.750 ; 2.240 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[2] ; FPGA_EXP4_div:div|clkout ; 1.563 ; 2.070 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[3] ; FPGA_EXP4_div:div|clkout ; 1.681 ; 2.201 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                          ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise   ; Fall   ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; row_signal[*]  ; FPGA_EXP4_div:div|clkout ; -0.667 ; -1.120 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[0] ; FPGA_EXP4_div:div|clkout ; -0.754 ; -1.188 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[1] ; FPGA_EXP4_div:div|clkout ; -0.808 ; -1.254 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[2] ; FPGA_EXP4_div:div|clkout ; -0.667 ; -1.120 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[3] ; FPGA_EXP4_div:div|clkout ; -0.791 ; -1.213 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                             ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise  ; Fall  ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; col_signal[*]  ; FPGA_EXP4_div:div|clkout ; 2.974 ; 3.151 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[0] ; FPGA_EXP4_div:div|clkout ; 2.872 ; 3.097 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[1] ; FPGA_EXP4_div:div|clkout ; 2.869 ; 3.033 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[2] ; FPGA_EXP4_div:div|clkout ; 2.974 ; 3.151 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[3] ; FPGA_EXP4_div:div|clkout ; 2.771 ; 2.882 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+; LED_data[*]    ; FPGA_EXP4_div:div|clkout ; 6.665 ; 6.990 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[0]   ; FPGA_EXP4_div:div|clkout ; 6.665 ; 6.390 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[1]   ; FPGA_EXP4_div:div|clkout ; 6.267 ; 5.904 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[2]   ; FPGA_EXP4_div:div|clkout ; 6.513 ; 5.608 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[3]   ; FPGA_EXP4_div:div|clkout ; 6.280 ; 5.910 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[4]   ; FPGA_EXP4_div:div|clkout ; 5.681 ; 6.007 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[5]   ; FPGA_EXP4_div:div|clkout ; 6.635 ; 6.990 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[6]   ; FPGA_EXP4_div:div|clkout ; 5.935 ; 5.641 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                     ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise  ; Fall  ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; col_signal[*]  ; FPGA_EXP4_div:div|clkout ; 2.517 ; 2.617 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[0] ; FPGA_EXP4_div:div|clkout ; 2.592 ; 2.784 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[1] ; FPGA_EXP4_div:div|clkout ; 2.600 ; 2.740 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[2] ; FPGA_EXP4_div:div|clkout ; 2.698 ; 2.852 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[3] ; FPGA_EXP4_div:div|clkout ; 2.517 ; 2.617 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+; LED_data[*]    ; FPGA_EXP4_div:div|clkout ; 3.592 ; 3.584 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[0]   ; FPGA_EXP4_div:div|clkout ; 3.894 ; 3.701 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[1]   ; FPGA_EXP4_div:div|clkout ; 4.195 ; 3.862 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[2]   ; FPGA_EXP4_div:div|clkout ; 3.778 ; 3.584 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[3]   ; FPGA_EXP4_div:div|clkout ; 4.215 ; 3.874 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[4]   ; FPGA_EXP4_div:div|clkout ; 3.592 ; 3.851 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[5]   ; FPGA_EXP4_div:div|clkout ; 3.978 ; 4.308 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[6]   ; FPGA_EXP4_div:div|clkout ; 3.817 ; 3.717 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+
+
+---------------------------------------------
+; Fast 1100mV 0C Model Metastability Report ;
+---------------------------------------------
+No synchronizer chains to report.
+
+
++-----------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                     ;
++---------------------------+---------+--------+----------+---------+---------------------+
+; Clock                     ; Setup   ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++---------------------------+---------+--------+----------+---------+---------------------+
+; Worst-case Slack          ; -3.115  ; -1.772 ; N/A      ; N/A     ; -0.724              ;
+;  FPGA_EXP4_div:div|clkout ; -2.996  ; 0.041  ; N/A      ; N/A     ; -0.724              ;
+;  clk                      ; -3.115  ; -1.772 ; N/A      ; N/A     ; -0.724              ;
+; Design-wide TNS           ; -64.795 ; -1.772 ; 0.0      ; 0.0     ; -35.967             ;
+;  FPGA_EXP4_div:div|clkout ; -17.440 ; 0.000  ; N/A      ; N/A     ; -17.101             ;
+;  clk                      ; -47.508 ; -1.772 ; N/A      ; N/A     ; -18.866             ;
++---------------------------+---------+--------+----------+---------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Setup Times                                                                                       ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise  ; Fall  ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; row_signal[*]  ; FPGA_EXP4_div:div|clkout ; 4.773 ; 4.724 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[0] ; FPGA_EXP4_div:div|clkout ; 4.193 ; 4.300 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[1] ; FPGA_EXP4_div:div|clkout ; 4.773 ; 4.724 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[2] ; FPGA_EXP4_div:div|clkout ; 4.153 ; 4.152 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[3] ; FPGA_EXP4_div:div|clkout ; 4.449 ; 4.515 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                          ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise   ; Fall   ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; row_signal[*]  ; FPGA_EXP4_div:div|clkout ; -0.631 ; -1.074 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[0] ; FPGA_EXP4_div:div|clkout ; -0.723 ; -1.141 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[1] ; FPGA_EXP4_div:div|clkout ; -0.784 ; -1.218 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[2] ; FPGA_EXP4_div:div|clkout ; -0.631 ; -1.074 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  row_signal[3] ; FPGA_EXP4_div:div|clkout ; -0.760 ; -1.177 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                               ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise   ; Fall   ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+; col_signal[*]  ; FPGA_EXP4_div:div|clkout ; 6.828  ; 6.930  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[0] ; FPGA_EXP4_div:div|clkout ; 6.559  ; 6.724  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[1] ; FPGA_EXP4_div:div|clkout ; 6.503  ; 6.639  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[2] ; FPGA_EXP4_div:div|clkout ; 6.828  ; 6.930  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[3] ; FPGA_EXP4_div:div|clkout ; 6.283  ; 6.353  ; Rise       ; FPGA_EXP4_div:div|clkout ;
+; LED_data[*]    ; FPGA_EXP4_div:div|clkout ; 14.110 ; 14.525 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[0]   ; FPGA_EXP4_div:div|clkout ; 14.110 ; 13.754 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[1]   ; FPGA_EXP4_div:div|clkout ; 12.773 ; 12.373 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[2]   ; FPGA_EXP4_div:div|clkout ; 13.803 ; 12.655 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[3]   ; FPGA_EXP4_div:div|clkout ; 12.597 ; 12.099 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[4]   ; FPGA_EXP4_div:div|clkout ; 11.585 ; 12.037 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[5]   ; FPGA_EXP4_div:div|clkout ; 14.028 ; 14.525 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[6]   ; FPGA_EXP4_div:div|clkout ; 11.960 ; 11.484 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+--------+--------+------------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                     ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; Data Port      ; Clock Port               ; Rise  ; Fall  ; Clock Edge ; Clock Reference          ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+; col_signal[*]  ; FPGA_EXP4_div:div|clkout ; 2.517 ; 2.617 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[0] ; FPGA_EXP4_div:div|clkout ; 2.592 ; 2.784 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[1] ; FPGA_EXP4_div:div|clkout ; 2.600 ; 2.740 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[2] ; FPGA_EXP4_div:div|clkout ; 2.698 ; 2.852 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+;  col_signal[3] ; FPGA_EXP4_div:div|clkout ; 2.517 ; 2.617 ; Rise       ; FPGA_EXP4_div:div|clkout ;
+; LED_data[*]    ; FPGA_EXP4_div:div|clkout ; 3.592 ; 3.584 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[0]   ; FPGA_EXP4_div:div|clkout ; 3.894 ; 3.701 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[1]   ; FPGA_EXP4_div:div|clkout ; 4.195 ; 3.862 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[2]   ; FPGA_EXP4_div:div|clkout ; 3.778 ; 3.584 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[3]   ; FPGA_EXP4_div:div|clkout ; 4.215 ; 3.874 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[4]   ; FPGA_EXP4_div:div|clkout ; 3.592 ; 3.851 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[5]   ; FPGA_EXP4_div:div|clkout ; 3.978 ; 4.308 ; Fall       ; FPGA_EXP4_div:div|clkout ;
+;  LED_data[6]   ; FPGA_EXP4_div:div|clkout ; 3.817 ; 3.717 ; Fall       ; FPGA_EXP4_div:div|clkout ;
++----------------+--------------------------+-------+-------+------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                                    ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin           ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; col_signal[0] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; col_signal[1] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; col_signal[2] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; col_signal[3] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_data[0]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_data[1]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_data[2]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_data[3]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_data[4]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_data[5]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_data[6]   ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; LED_choose    ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++------------------------------------------------------------------+
+; Input Transition Times                                           ;
++---------------+--------------+-----------------+-----------------+
+; Pin           ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++---------------+--------------+-----------------+-----------------+
+; row_signal[2] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; row_signal[3] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; row_signal[0] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; row_signal[1] ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clk           ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++---------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; col_signal[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.86e-08 V                   ; 2.4 V               ; -0.0326 V           ; 0.227 V                              ; 0.16 V                               ; 4.73e-10 s                  ; 4.78e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.86e-08 V                  ; 2.4 V              ; -0.0326 V          ; 0.227 V                             ; 0.16 V                              ; 4.73e-10 s                 ; 4.78e-10 s                 ; No                        ; Yes                       ;
+; col_signal[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.72e-08 V                   ; 2.4 V               ; -0.041 V            ; 0.19 V                               ; 0.126 V                              ; 4.59e-10 s                  ; 4.54e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.72e-08 V                  ; 2.4 V              ; -0.041 V           ; 0.19 V                              ; 0.126 V                             ; 4.59e-10 s                 ; 4.54e-10 s                 ; No                        ; Yes                       ;
+; col_signal[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.72e-08 V                   ; 2.4 V               ; -0.0409 V           ; 0.192 V                              ; 0.125 V                              ; 4.59e-10 s                  ; 4.54e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.72e-08 V                  ; 2.4 V              ; -0.0409 V          ; 0.192 V                             ; 0.125 V                             ; 4.59e-10 s                 ; 4.54e-10 s                 ; No                        ; Yes                       ;
+; col_signal[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.72e-08 V                   ; 2.4 V               ; -0.0409 V           ; 0.192 V                              ; 0.125 V                              ; 4.59e-10 s                  ; 4.54e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.72e-08 V                  ; 2.4 V              ; -0.0409 V          ; 0.192 V                             ; 0.125 V                             ; 4.59e-10 s                 ; 4.54e-10 s                 ; No                        ; Yes                       ;
+; LED_data[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.72e-08 V                   ; 2.4 V               ; -0.041 V            ; 0.19 V                               ; 0.126 V                              ; 4.59e-10 s                  ; 4.54e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.72e-08 V                  ; 2.4 V              ; -0.041 V           ; 0.19 V                              ; 0.126 V                             ; 4.59e-10 s                 ; 4.54e-10 s                 ; No                        ; Yes                       ;
+; LED_data[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.91e-08 V                   ; 2.35 V              ; -0.0136 V           ; 0.17 V                               ; 0.118 V                              ; 4.69e-10 s                  ; 4.63e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.91e-08 V                  ; 2.35 V             ; -0.0136 V          ; 0.17 V                              ; 0.118 V                             ; 4.69e-10 s                 ; 4.63e-10 s                 ; Yes                       ; Yes                       ;
+; LED_data[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.91e-08 V                   ; 2.35 V              ; -0.0136 V           ; 0.17 V                               ; 0.118 V                              ; 4.69e-10 s                  ; 4.63e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.91e-08 V                  ; 2.35 V             ; -0.0136 V          ; 0.17 V                              ; 0.118 V                             ; 4.69e-10 s                 ; 4.63e-10 s                 ; Yes                       ; Yes                       ;
+; LED_data[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.91e-08 V                   ; 2.35 V              ; -0.0136 V           ; 0.17 V                               ; 0.118 V                              ; 4.69e-10 s                  ; 4.63e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.91e-08 V                  ; 2.35 V             ; -0.0136 V          ; 0.17 V                              ; 0.118 V                             ; 4.69e-10 s                 ; 4.63e-10 s                 ; Yes                       ; Yes                       ;
+; LED_data[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.86e-08 V                   ; 2.4 V               ; -0.0326 V           ; 0.227 V                              ; 0.16 V                               ; 4.73e-10 s                  ; 4.78e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.86e-08 V                  ; 2.4 V              ; -0.0326 V          ; 0.227 V                             ; 0.16 V                              ; 4.73e-10 s                 ; 4.78e-10 s                 ; No                        ; Yes                       ;
+; LED_data[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.91e-08 V                   ; 2.35 V              ; -0.0136 V           ; 0.17 V                               ; 0.118 V                              ; 4.69e-10 s                  ; 4.63e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.91e-08 V                  ; 2.35 V             ; -0.0136 V          ; 0.17 V                              ; 0.118 V                             ; 4.69e-10 s                 ; 4.63e-10 s                 ; Yes                       ; Yes                       ;
+; LED_data[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 5.91e-08 V                   ; 2.35 V              ; -0.0136 V           ; 0.17 V                               ; 0.118 V                              ; 4.69e-10 s                  ; 4.63e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 5.91e-08 V                  ; 2.35 V             ; -0.0136 V          ; 0.17 V                              ; 0.118 V                             ; 4.69e-10 s                 ; 4.63e-10 s                 ; Yes                       ; Yes                       ;
+; LED_choose    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 6.72e-08 V                   ; 2.4 V               ; -0.041 V            ; 0.19 V                               ; 0.126 V                              ; 4.59e-10 s                  ; 4.54e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 6.72e-08 V                  ; 2.4 V              ; -0.041 V           ; 0.19 V                              ; 0.126 V                             ; 4.59e-10 s                 ; 4.54e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; col_signal[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.05e-05 V                   ; 2.37 V              ; -0.0225 V           ; 0.277 V                              ; 0.104 V                              ; 5.22e-10 s                  ; 6.28e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.05e-05 V                  ; 2.37 V             ; -0.0225 V          ; 0.277 V                             ; 0.104 V                             ; 5.22e-10 s                 ; 6.28e-10 s                 ; No                        ; Yes                       ;
+; col_signal[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.04e-05 V                   ; 2.38 V              ; -0.0273 V           ; 0.226 V                              ; 0.08 V                               ; 4.84e-10 s                  ; 5.19e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.04e-05 V                  ; 2.38 V             ; -0.0273 V          ; 0.226 V                             ; 0.08 V                              ; 4.84e-10 s                 ; 5.19e-10 s                 ; No                        ; Yes                       ;
+; col_signal[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.04e-05 V                   ; 2.38 V              ; -0.027 V            ; 0.226 V                              ; 0.08 V                               ; 4.84e-10 s                  ; 5.18e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.04e-05 V                  ; 2.38 V             ; -0.027 V           ; 0.226 V                             ; 0.08 V                              ; 4.84e-10 s                 ; 5.18e-10 s                 ; No                        ; Yes                       ;
+; col_signal[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.04e-05 V                   ; 2.38 V              ; -0.027 V            ; 0.226 V                              ; 0.08 V                               ; 4.84e-10 s                  ; 5.18e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.04e-05 V                  ; 2.38 V             ; -0.027 V           ; 0.226 V                             ; 0.08 V                              ; 4.84e-10 s                 ; 5.18e-10 s                 ; No                        ; Yes                       ;
+; LED_data[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.04e-05 V                   ; 2.38 V              ; -0.0273 V           ; 0.226 V                              ; 0.08 V                               ; 4.84e-10 s                  ; 5.19e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.04e-05 V                  ; 2.38 V             ; -0.0273 V          ; 0.226 V                             ; 0.08 V                              ; 4.84e-10 s                 ; 5.19e-10 s                 ; No                        ; Yes                       ;
+; LED_data[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.38e-06 V                   ; 2.34 V              ; -0.00733 V          ; 0.234 V                              ; 0.071 V                              ; 5.36e-10 s                  ; 5.75e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 9.38e-06 V                  ; 2.34 V             ; -0.00733 V         ; 0.234 V                             ; 0.071 V                             ; 5.36e-10 s                 ; 5.75e-10 s                 ; No                        ; Yes                       ;
+; LED_data[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.38e-06 V                   ; 2.34 V              ; -0.00733 V          ; 0.234 V                              ; 0.071 V                              ; 5.36e-10 s                  ; 5.75e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 9.38e-06 V                  ; 2.34 V             ; -0.00733 V         ; 0.234 V                             ; 0.071 V                             ; 5.36e-10 s                 ; 5.75e-10 s                 ; No                        ; Yes                       ;
+; LED_data[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.38e-06 V                   ; 2.34 V              ; -0.00733 V          ; 0.234 V                              ; 0.071 V                              ; 5.36e-10 s                  ; 5.75e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 9.38e-06 V                  ; 2.34 V             ; -0.00733 V         ; 0.234 V                             ; 0.071 V                             ; 5.36e-10 s                 ; 5.75e-10 s                 ; No                        ; Yes                       ;
+; LED_data[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.05e-05 V                   ; 2.37 V              ; -0.0225 V           ; 0.277 V                              ; 0.104 V                              ; 5.22e-10 s                  ; 6.28e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.05e-05 V                  ; 2.37 V             ; -0.0225 V          ; 0.277 V                             ; 0.104 V                             ; 5.22e-10 s                 ; 6.28e-10 s                 ; No                        ; Yes                       ;
+; LED_data[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.38e-06 V                   ; 2.34 V              ; -0.00733 V          ; 0.234 V                              ; 0.071 V                              ; 5.36e-10 s                  ; 5.75e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 9.38e-06 V                  ; 2.34 V             ; -0.00733 V         ; 0.234 V                             ; 0.071 V                             ; 5.36e-10 s                 ; 5.75e-10 s                 ; No                        ; Yes                       ;
+; LED_data[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.38e-06 V                   ; 2.34 V              ; -0.00733 V          ; 0.234 V                              ; 0.071 V                              ; 5.36e-10 s                  ; 5.75e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 9.38e-06 V                  ; 2.34 V             ; -0.00733 V         ; 0.234 V                             ; 0.071 V                             ; 5.36e-10 s                 ; 5.75e-10 s                 ; No                        ; Yes                       ;
+; LED_choose    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.04e-05 V                   ; 2.38 V              ; -0.0273 V           ; 0.226 V                              ; 0.08 V                               ; 4.84e-10 s                  ; 5.19e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.04e-05 V                  ; 2.38 V             ; -0.0273 V          ; 0.226 V                             ; 0.08 V                              ; 4.84e-10 s                 ; 5.19e-10 s                 ; No                        ; Yes                       ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; col_signal[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; col_signal[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; col_signal[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; col_signal[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.121 V            ; 0.326 V                              ; 0.297 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.121 V           ; 0.326 V                             ; 0.297 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; LED_data[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
+; LED_data[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; LED_data[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; LED_data[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; LED_data[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; LED_data[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; LED_data[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
+; LED_choose    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.14e-06 V                   ; 2.91 V              ; -0.119 V            ; 0.326 V                              ; 0.298 V                              ; 2.74e-10 s                  ; 2.8e-10 s                   ; No                         ; No                         ; 2.75 V                      ; 4.14e-06 V                  ; 2.91 V             ; -0.119 V           ; 0.326 V                             ; 0.298 V                             ; 2.74e-10 s                 ; 2.8e-10 s                  ; No                        ; No                        ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin           ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; col_signal[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; col_signal[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; col_signal[2] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; col_signal[3] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0814 V           ; 0.36 V                               ; 0.156 V                              ; 3e-10 s                     ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0814 V          ; 0.36 V                              ; 0.156 V                             ; 3e-10 s                    ; 4.34e-10 s                 ; No                        ; No                        ;
+; LED_data[0]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
+; LED_data[1]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; LED_data[2]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; LED_data[3]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; LED_data[4]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; LED_data[5]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; LED_data[6]   ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
+; LED_choose    ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000242 V                   ; 2.86 V              ; -0.0805 V           ; 0.358 V                              ; 0.156 V                              ; 3.01e-10 s                  ; 4.34e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000242 V                  ; 2.86 V             ; -0.0805 V          ; 0.358 V                             ; 0.156 V                             ; 3.01e-10 s                 ; 4.34e-10 s                 ; No                        ; No                        ;
++---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                 ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+; From Clock               ; To Clock                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+; clk                      ; clk                      ; 399      ; 0        ; 0        ; 0        ;
+; FPGA_EXP4_div:div|clkout ; clk                      ; 1        ; 1        ; 0        ; 0        ;
+; FPGA_EXP4_div:div|clkout ; FPGA_EXP4_div:div|clkout ; 20       ; 0        ; 16       ; 0        ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                  ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+; From Clock               ; To Clock                 ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+; clk                      ; clk                      ; 399      ; 0        ; 0        ; 0        ;
+; FPGA_EXP4_div:div|clkout ; clk                      ; 1        ; 1        ; 0        ; 0        ;
+; FPGA_EXP4_div:div|clkout ; FPGA_EXP4_div:div|clkout ; 20       ; 0        ; 16       ; 0        ;
++--------------------------+--------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 4     ; 4    ;
+; Unconstrained Input Port Paths  ; 16    ; 16   ;
+; Unconstrained Output Ports      ; 11    ; 11   ;
+; Unconstrained Output Port Paths ; 32    ; 32   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Tue Nov 04 18:25:39 2025
+Info: Command: quartus_sta FPGA_EXP4_hd -c FPGA_EXP4_hd
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 16 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 12 of the 12 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'FPGA_EXP4_hd.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk clk
+    Info (332105): create_clock -period 1.000 -name FPGA_EXP4_div:div|clkout FPGA_EXP4_div:div|clkout
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1100mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.996
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.996             -17.440 FPGA_EXP4_div:div|clkout 
+    Info (332119):    -2.802             -47.181 clk 
+Info (332146): Worst-case hold slack is -1.726
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.726              -1.726 clk 
+    Info (332119):     0.315               0.000 FPGA_EXP4_div:div|clkout 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.724
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.724             -18.866 clk 
+    Info (332119):    -0.724             -17.101 FPGA_EXP4_div:div|clkout 
+Info: Analyzing Slow 1100mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -3.115
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.115             -47.508 clk 
+    Info (332119):    -2.680             -17.287 FPGA_EXP4_div:div|clkout 
+Info (332146): Worst-case hold slack is -1.772
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.772              -1.772 clk 
+    Info (332119):     0.267               0.000 FPGA_EXP4_div:div|clkout 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.724
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.724             -18.797 clk 
+    Info (332119):    -0.724             -16.870 FPGA_EXP4_div:div|clkout 
+Info: Analyzing Fast 1100mV 85C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -1.014
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.014              -9.433 clk 
+    Info (332119):    -0.898              -3.016 FPGA_EXP4_div:div|clkout 
+Info (332146): Worst-case hold slack is -0.779
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.779              -0.779 clk 
+    Info (332119):     0.041               0.000 FPGA_EXP4_div:div|clkout 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.256
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.256              -1.749 clk 
+    Info (332119):     0.123               0.000 FPGA_EXP4_div:div|clkout 
+Info: Analyzing Fast 1100mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
+Info (332146): Worst-case setup slack is -0.968
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.968              -8.097 clk 
+    Info (332119):    -0.817              -2.439 FPGA_EXP4_div:div|clkout 
+Info (332146): Worst-case hold slack is -0.821
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.821              -0.821 clk 
+    Info (332119):     0.049               0.000 FPGA_EXP4_div:div|clkout 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.264
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.264              -1.798 clk 
+    Info (332119):     0.129               0.000 FPGA_EXP4_div:div|clkout 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 5036 megabytes
+    Info: Processing ended: Tue Nov 04 18:25:46 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
+
+

@@ -1,0 +1,3 @@
+`timescale 10ns/1ns
+
+module FPGA_EXP3_div 

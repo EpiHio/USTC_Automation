@@ -1,0 +1,37 @@
+`timescale 10ns/1ns
+module FPGA_EXP2_hd_tb();
+	 reg rst;
+    reg clk;
+    reg ena;
+    reg [3:0] input_data;
+    reg [2:0] reg_choose;
+    wire [6:0] LED_data;
+    wire [7:0] LED_choose;
+    wire clkout_debug;
+
+	 FPGA_EXP2_hd fpga(
+	 .rst(rst),
+	 .clk(clk),
+	 .ena(ena),
+	 .input_data(input_data),
+	 .reg_choose(reg_choose),
+	 .LED_data(LED_data),
+	 .LED_choose(LED_choose),
+	 .clkout_debug(clkout_debug)
+	 );		
+
+	 
+	 initial
+		begin
+		 ena=0;
+		 rst=0;
+		 #5 ena=1;
+		 #5 rst=1;
+	 
+		end
+
+
+	initial clk = 1'b0;
+	always #1 clk = ~clk; //产生时钟信号
+
+endmodule
