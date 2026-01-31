@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  3 JAN 2026 18:55
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.4.9)  31 JAN 2026 21:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -822,8 +822,7 @@ File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
 ))
 \c@tcb@cnt@highlightedsection=\count378
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 32.
-
-No file 计网复习记录.aux.
+ (./计网复习记录.aux)
 \openout1 = `计网复习记录.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -846,6 +845,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -958,253 +958,15 @@ Package gensymb Warning: Not defining \micro.
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.17).
 
 Package hyperref Info: Link coloring ON on input line 32.
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
-
-LaTeX Warning: Hyper reference `sec:2.1' on page 1 undefined on input line 44.
-
-
-LaTeX Warning: Reference `sec:2.1' on page 1 undefined on input line 44.
-
-
-LaTeX Warning: Hyper reference `sec:2.1.1' on page 1 undefined on input line 46.
-
-
-LaTeX Warning: Reference `sec:2.1.1' on page 1 undefined on input line 46.
-
-
-LaTeX Warning: Hyper reference `sec:2.1.2' on page 1 undefined on input line 47.
-
-
-LaTeX Warning: Reference `sec:2.1.2' on page 1 undefined on input line 47.
-
-
-LaTeX Warning: Hyper reference `sec:2.1.3' on page 1 undefined on input line 48.
-
-
-LaTeX Warning: Reference `sec:2.1.3' on page 1 undefined on input line 48.
-
-
-LaTeX Warning: Hyper reference `sec:2.1.4' on page 1 undefined on input line 49.
-
-
-LaTeX Warning: Reference `sec:2.1.4' on page 1 undefined on input line 49.
-
-
-LaTeX Warning: Hyper reference `sec:2.1.6' on page 1 undefined on input line 50.
-
-
-LaTeX Warning: Reference `sec:2.1.6' on page 1 undefined on input line 50.
-
-
-LaTeX Warning: Hyper reference `sec:2.1.7' on page 1 undefined on input line 51.
-
-
-LaTeX Warning: Reference `sec:2.1.7' on page 1 undefined on input line 51.
-
-
-LaTeX Warning: Hyper reference `sec:3.1' on page 1 undefined on input line 54.
-
-
-LaTeX Warning: Reference `sec:3.1' on page 1 undefined on input line 54.
-
-
-LaTeX Warning: Hyper reference `sec:3.1.1' on page 1 undefined on input line 56.
-
-
-LaTeX Warning: Reference `sec:3.1.1' on page 1 undefined on input line 56.
-
-
-LaTeX Warning: Hyper reference `sec:3.1.2' on page 1 undefined on input line 57.
-
-
-LaTeX Warning: Reference `sec:3.1.2' on page 1 undefined on input line 57.
-
-
-LaTeX Warning: Hyper reference `sec:3.1.3' on page 1 undefined on input line 58.
-
-
-LaTeX Warning: Reference `sec:3.1.3' on page 1 undefined on input line 58.
-
-
-LaTeX Warning: Hyper reference `sec:3.1.4' on page 1 undefined on input line 59.
-
-
-LaTeX Warning: Reference `sec:3.1.4' on page 1 undefined on input line 59.
-
-
-LaTeX Warning: Hyper reference `sec:3.1.5' on page 1 undefined on input line 60.
-
-
-LaTeX Warning: Reference `sec:3.1.5' on page 1 undefined on input line 60.
-
-
-LaTeX Warning: Hyper reference `sec:3.1.6' on page 1 undefined on input line 61.
-
-
-LaTeX Warning: Reference `sec:3.1.6' on page 1 undefined on input line 61.
-
-
-LaTeX Warning: Hyper reference `sec:3.1.7' on page 1 undefined on input line 62.
-
-
-LaTeX Warning: Reference `sec:3.1.7' on page 1 undefined on input line 62.
-
-
-LaTeX Warning: Hyper reference `sec:4.1' on page 1 undefined on input line 65.
-
-
-LaTeX Warning: Reference `sec:4.1' on page 1 undefined on input line 65.
-
-
-LaTeX Warning: Hyper reference `sec:4.1.1' on page 1 undefined on input line 67.
-
-
-LaTeX Warning: Reference `sec:4.1.1' on page 1 undefined on input line 67.
-
-
-LaTeX Warning: Hyper reference `sec:4.1.2' on page 1 undefined on input line 68.
-
-
-LaTeX Warning: Reference `sec:4.1.2' on page 1 undefined on input line 68.
-
-
-LaTeX Warning: Hyper reference `sec:4.1.3' on page 1 undefined on input line 69.
-
-
-LaTeX Warning: Reference `sec:4.1.3' on page 1 undefined on input line 69.
-
-
-LaTeX Warning: Hyper reference `sec:5.1' on page 1 undefined on input line 71.
-
-
-LaTeX Warning: Reference `sec:5.1' on page 1 undefined on input line 71.
-
-
-LaTeX Warning: Hyper reference `sec:5.1.1' on page 1 undefined on input line 73.
-
-
-LaTeX Warning: Reference `sec:5.1.1' on page 1 undefined on input line 73.
-
-
-LaTeX Warning: Hyper reference `sec:5.1.2' on page 1 undefined on input line 74.
-
-
-LaTeX Warning: Reference `sec:5.1.2' on page 1 undefined on input line 74.
-
-
-LaTeX Warning: Hyper reference `sec:5.1.3' on page 1 undefined on input line 75.
-
-
-LaTeX Warning: Reference `sec:5.1.3' on page 1 undefined on input line 75.
-
-
-LaTeX Warning: Hyper reference `sec:5.1.4' on page 1 undefined on input line 76.
-
-
-LaTeX Warning: Reference `sec:5.1.4' on page 1 undefined on input line 76.
-
-
-LaTeX Warning: Hyper reference `sec:5.1.5' on page 1 undefined on input line 77.
-
-
-LaTeX Warning: Reference `sec:5.1.5' on page 1 undefined on input line 77.
-
 [1
 
-]
-
-LaTeX Warning: Hyper reference `sec:6.1' on page 2 undefined on input line 79.
-
-
-LaTeX Warning: Reference `sec:6.1' on page 2 undefined on input line 79.
-
-
-LaTeX Warning: Hyper reference `sec:6.1.1' on page 2 undefined on input line 81.
-
-
-LaTeX Warning: Reference `sec:6.1.1' on page 2 undefined on input line 81.
-
-
-LaTeX Warning: Hyper reference `sec:6.1.2' on page 2 undefined on input line 82.
-
-
-LaTeX Warning: Reference `sec:6.1.2' on page 2 undefined on input line 82.
-
-
-LaTeX Warning: Hyper reference `sec:6.1.3' on page 2 undefined on input line 83.
-
-
-LaTeX Warning: Reference `sec:6.1.3' on page 2 undefined on input line 83.
-
-
-LaTeX Warning: Hyper reference `sec:6.1.4' on page 2 undefined on input line 84.
-
-
-LaTeX Warning: Reference `sec:6.1.4' on page 2 undefined on input line 84.
-
-
-LaTeX Warning: Hyper reference `app:glossary' on page 2 undefined on input line 86.
-
-
-LaTeX Warning: Reference `app:glossary' on page 2 undefined on input line 86.
-
-[2] [3] [4] [5] [6] [7] [8]
-
-LaTeX Warning: File `rdt1.0.png' not found on input line 326.
-
-./计网复习记录.tex:326: Unable to load picture or PDF file 'rdt1.0.png'.
-<to be read again> 
-                   }
-l.326 ...udegraphics[width=\textwidth]{rdt1.0.png}
-                                                  
-The requested image couldn't be read because
-it was not a recognized image format.
-
-
-./计网复习记录.tex:326: Package graphics Error: Division by 0.
-
-See the graphics package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.326 ...udegraphics[width=\textwidth]{rdt1.0.png}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+] [2] [3] [4] [5] [6] [7] [8]
 File: rdt1.0.png Graphic file (type bmp)
 <rdt1.0.png>
 
 Underfull \hbox (badness 10000) in paragraph at lines 319--328
 
  []
-
-
-LaTeX Warning: File `rdt2.1发送方.png' not found on input line 340.
-
-./计网复习记录.tex:340: Unable to load picture or PDF file 'rdt2.1发送方.png'.
-<to be read again> 
-                   }
-l.340 ...graphics[width=\textwidth]{rdt2.1发送方.png}
-                                                  
-The requested image couldn't be read because
-it was not a recognized image format.
-
-
-./计网复习记录.tex:340: Package graphics Error: Division by 0.
-
-See the graphics package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.340 ...graphics[width=\textwidth]{rdt2.1发送方.png}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
 
 File: rdt2.1发送方.png Graphic file (type bmp)
 <rdt2.1发送方.png>
@@ -1214,66 +976,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--342
  []
 
 [9]
-
-LaTeX Warning: File `rdt2.1接收方.png' not found on input line 345.
-
-./计网复习记录.tex:345: Unable to load picture or PDF file 'rdt2.1接收方.png'.
-<to be read again> 
-                   }
-l.345 ...graphics[width=\textwidth]{rdt2.1接收方.png}
-                                                  
-The requested image couldn't be read because
-it was not a recognized image format.
-
-
-./计网复习记录.tex:345: Package graphics Error: Division by 0.
-
-See the graphics package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.345 ...graphics[width=\textwidth]{rdt2.1接收方.png}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
 File: rdt2.1接收方.png Graphic file (type bmp)
 <rdt2.1接收方.png>
-
-LaTeX Warning: File `rdt3.0发送方.png' not found on input line 358.
-
-./计网复习记录.tex:358: Unable to load picture or PDF file 'rdt3.0发送方.png'.
-<to be read again> 
-                   }
-l.358 ...graphics[width=\textwidth]{rdt3.0发送方.png}
-                                                  
-The requested image couldn't be read because
-it was not a recognized image format.
-
-
-./计网复习记录.tex:358: Package graphics Error: Division by 0.
-
-See the graphics package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.358 ...graphics[width=\textwidth]{rdt3.0发送方.png}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+ [10]
 File: rdt3.0发送方.png Graphic file (type bmp)
 <rdt3.0发送方.png>
-
+ [11]
 Underfull \hbox (badness 10000) in paragraph at lines 370--376
 
  []
 
-[10]
+[12]
 Overfull \hbox (11.77925pt too wide) in paragraph at lines 403--410
 []\TU/lmr/m/n/12 SampleRTT \TU/SimSun(0)/m/n/12 值 会 波 动，|  故 必 须 对 其 取 平 均：| $\OML/cmm/m/it/12 EstimatedRTT \OT1/cmr/m/n/12 = (1 \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 ^^K\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 EstimatedRTT \OT1/cmr/m/n/12 +
  []
 
-[11
+[13]
+File: ack.jpg Graphic file (type bmp)
+<ack.jpg>
+File: 状态.jpg Graphic file (type bmp)
+<状态.jpg>
+ [14] [15] [16]
+File: 拥塞控制转换.jpg Graphic file (type bmp)
+<拥塞控制转换.jpg>
+ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 512--515
+
+ []
+
+[18] [19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 603--620
+
+ []
+
+[21]
+File: IPv6.jpg Graphic file (type bmp)
+<IPv6.jpg>
+ [22] [23] [24] [25] [26]
+File: ICMP.jpg Graphic file (type bmp)
+<ICMP.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 778--785
+
+ []
+
+[27] [28] [29]
+File: CRC.jpg Graphic file (type bmp)
+<CRC.jpg>
+ [30] [31] [32] [33]
+File: 自学习.jpg Graphic file (type bmp)
+<自学习.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 931--943
+
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 957--1019
+
+ []
+
+[35] [36] [37] (./计网复习记录.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2022/07/14>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 44038 strings out of 476720
+ 1122953 string characters out of 5801445
+ 1947842 words of memory out of 5000000
+ 65419 multiletter control sequences out of 15000+600000
+ 566072 words of font info for 87 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 102i,6n,107p,1338b,998s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on 计网复习记录.pdf (37 pages).
